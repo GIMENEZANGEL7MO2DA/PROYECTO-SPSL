@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #b0b3e6;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #8a8dbf;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+        .container h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #000;
+        }
+        .container p {
+            margin: 10px 0;
+            color: #000;
+        }
+        .container label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #000;
+        }
+        .container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #0000ff;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0000ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .container button:hover {
+            background-color: #0000cc;
+        }
+        .container .login-link {
+            text-align: center;
+            margin-top: 10px;
+            color: #000;
+        }
+        .container .login-link a {
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .container .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registro privado</h2>
+        <p>Llenar los siguientes datos</p>
+        <label for="nombres">Nombres</label>
+        <input type="text" id="nombres" placeholder="Introduce tus nombres">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" placeholder="Introduce tus apellidos">
+        <label for="dni">DNI</label>
+        <input type="text" id="dni" placeholder="Introduce tu DNI">
+        <button>Siguiente</button>
+        <div class="login-link">
+            <p>Ya tienes cuenta? <a href="#">Inicia sesion</a></p>
+        </div>
+    </div>
+</body>
+</html>

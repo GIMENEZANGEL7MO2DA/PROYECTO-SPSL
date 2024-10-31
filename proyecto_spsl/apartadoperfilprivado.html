@@ -1,0 +1,242 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #007afd;
+            background-image: url('https://placehold.co/800x600/99ccff/ffffff?text=Background+Image');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+            overflow-y: auto;
+            position: relative;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 1000px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            background-color: #e0f7fa;
+            border: 2px solid #000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            font-size: 18px;
+            color: #999;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+        .profile-pic:hover {
+            background-color: #b2ebf2;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .label {
+            font-weight: bold;
+            text-align: left;
+            margin-right: 10px;
+            width: 150px;
+        }
+        .input-box {
+            background-color: #e0f7fa;
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            color: #000;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .input-box:hover {
+            background-color: #b2ebf2;
+        }
+        .input-box input {
+            width: 100%;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 16px;
+        }
+        .description-box {
+            background-color: #e0f7fa;
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            height: 60px;
+            color: #000;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .description-box:hover {
+            background-color: #b2ebf2;
+        }
+        .description-box textarea {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 16px;
+            resize: none;
+        }
+        .large-input-box {
+            background-color: #e0f7fa;
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            height: 60px;
+            color: #000;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .large-input-box:hover {
+            background-color: #b2ebf2;
+        }
+        .large-input-box textarea {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 16px;
+            resize: none;
+        }
+        .button-group {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button-group button {
+            background-color: #0073b1;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 10px;
+        }
+        .button-group button:hover {
+            background-color: #005f8d;
+        }
+        .rating-box {
+            background-color: #e0f7fa;
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100px;
+            color: #000;
+            cursor: pointer;
+            word-wrap: break-word;
+            margin: 0 10px;
+        }
+        .rating-box:hover {
+            background-color: #b2ebf2;
+        }
+        .home-icon {
+            font-size: 24px;
+            color: #000;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .home-icon:hover {
+            color: #666;
+        }
+        .top-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 600px) {
+            .input-box {
+                width: 100%;
+            }
+            .profile-pic {
+                width: 80px;
+                height: 80px;
+                font-size: 14px;
+            }
+            .input-box, .description-box, .large-input-box, .rating-box {
+                padding: 8px;
+                font-size: 14px;
+                width: 100%;
+            }
+            .home-icon {
+                font-size: 18px;
+                margin-left: 10px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <i class="fas fa-home home-icon"></i>
+    <div class="container">
+        <div class="top-section">
+            <div class="profile-pic">Foto de Perfil</div>
+        </div>
+        <div class="form-group">
+            <div class="label">Alias</div>
+            <div class="input-box"><input type="text" placeholder="Ingrese Alias"></div>
+        </div>
+        <div class="form-group">
+            <div class="label">Nombre/Apellido</div>
+            <div class="input-box"><input type="text" placeholder="Ingrese Nombre/Apellido"></div>
+        </div>
+        <div class="form-group">
+            <div class="label">Edad</div>
+            <div class="input-box"><input type="text" placeholder="Ingrese Edad"></div>
+        </div>
+        <div class="form-group">
+            <div class="label">Profesion</div>
+            <div class="input-box"><input type="text" placeholder="Ingrese Profesion"></div>
+        </div>
+        <div class="form-group">
+            <div class="label">Especialidad</div>
+            <div class="input-box"><input type="text" placeholder="Ingrese Especialidad"></div>
+        </div>
+        <div class="form-group">
+            <div class="label">Descripcion Personal del Usuario</div>
+            <div class="description-box"><textarea placeholder="Ingrese Descripcion"></textarea></div>
+        </div>
+        <div class="form-group">
+            <div class="label">Inserte su Formacion Academica</div>
+            <div class="large-input-box"><textarea placeholder="Ingrese Formacion Academica"></textarea></div>
+        </div>
+        <div class="form-group">
+            <div class="label">Inserte su Formacion Laboral</div>
+            <div class="large-input-box"><textarea placeholder="Ingrese Formacion Laboral"></textarea></div>
+        </div>
+        <div class="button-group">
+            <div class="rating-box">Calificacion</div>
+            <button>Listo</button>
+        </div>
+    </div>
+</body>
+</html>

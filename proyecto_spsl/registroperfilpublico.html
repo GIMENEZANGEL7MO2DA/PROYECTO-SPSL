@@ -1,0 +1,114 @@
+<html>
+<head>
+    <title>Registro del perfil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #6B7AA1;
+            font-family: Arial, sans-serif;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #A3B1C6;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header i {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+        .subheader {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #0000FF;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .button {
+            background-color: #0000FF;
+            color: #FFF;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+            .header h1 {
+                font-size: 18px;
+            }
+            .form-group input {
+                padding: 8px;
+            }
+            .button {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-arrow-left"></i>
+            <h1>Registro perfil publico</h1>
+        </div>
+        <div class="subheader">Llenar los siguientes datos</div>
+        <div class="form-group">
+            <label for="username">Nombre de usuario</label>
+            <input type="text" id="username" placeholder="Ingrese un nombre de usuario solo con letras y numeros">
+        </div>
+        <div class="form-group">
+            <label for="age">Edad (No es obligatorio)</label>
+            <input type="text" id="age" placeholder="Ingresar edad">
+        </div>
+        <button class="button">Siguiente</button>
+        <div class="footer">
+            Ya tienes cuenta? <a href="#">Inicia sesion</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cce0f5;
+            background-image: url('https://placehold.co/800x600/99ccff/ffffff?text=Background+Image');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+            overflow-y: auto;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 1000px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            background-color: #e0f7fa;
+            border: 2px solid #000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            font-size: 18px;
+            color: #999;
+            overflow: hidden;
+            position: relative;
+        }
+        .label {
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 5px;
+            width: 100%;
+        }
+        .input-box {
+            background-color: #e0f7fa;
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            color: #999;
+            cursor: pointer;
+            width: 100%;
+            max-width: 400px;
+        }
+        .input-box:hover {
+            background-color: #b2ebf2;
+        }
+        .description-box {
+            background-color: #e0f7fa;
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            height: 60px;
+            color: #999;
+            cursor: pointer;
+            width: 100%;
+            max-width: 400px;
+        }
+        .description-box:hover {
+            background-color: #b2ebf2;
+        }
+        .large-input-box {
+            background-color: #e0f7fa;
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            height: 60px;
+            color: #999;
+            cursor: pointer;
+            width: 100%;
+            max-width: 400px;
+        }
+        .large-input-box:hover {
+            background-color: #b2ebf2;
+        }
+        .rating-box {
+            background-color: #e0f7fa;
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100px;
+            margin: 0 auto;
+            color: #000;
+            cursor: pointer;
+            word-wrap: break-word;
+        }
+        .rating-box:hover {
+            background-color: #b2ebf2;
+        }
+        .home-icon {
+            font-size: 24px;
+            color: #000;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+        .home-icon:hover {
+            color: #666;
+        }
+        .top-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 600px) {
+            .input-box {
+                width: 100%;
+            }
+            .profile-pic {
+                width: 80px;
+                height: 80px;
+                font-size: 14px;
+            }
+            .input-box, .description-box, .large-input-box, .rating-box {
+                padding: 8px;
+                font-size: 14px;
+                width: 100%;
+            }
+            .home-icon {
+                font-size: 18px;
+                margin-left: 10px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-section">
+            <div class="profile-pic">Foto de Perfil</div>
+            <i class="fas fa-home home-icon"></i>
+        </div>
+        <div class="label">Alias</div>
+        <div class="input-box"></div>
+        <div class="label">Nombre/Apellido</div>
+        <div class="input-box"></div>
+        <div class="label">Profesion</div>
+        <div class="input-box"></div>
+        <div class="label">Especialidad</div>
+        <div class="input-box"></div>
+        <div class="label">Descripcion Personal del Usuario</div>
+        <div class="description-box"></div>
+        <div class="label">Inserte su Formacion Academica</div>
+        <div class="large-input-box"></div>
+        <div class="label">Inserte su Formacion Laboral</div>
+        <div class="large-input-box"></div>
+        <div class="rating-box">Calificacion</div>
+    </div>
+</body>
+</html>

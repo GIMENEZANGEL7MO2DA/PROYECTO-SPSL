@@ -1,0 +1,107 @@
+<html></html>
+<head>
+    <title>Inicio de sesion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #3b3b3b;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            color: white;
+        }
+        .content h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .content p {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #f0f0f0;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4a00e0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #3700b3;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        @media (max-width: 400px) {
+            .container {
+                padding: 15px;
+            }
+            .content h1 {
+                font-size: 20px;
+            }
+            .form-group input {
+                font-size: 14px;
+            }
+            .btn {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Inicio de sesion</h1>
+            <p>Inicia sesion con tu cuenta de SPSL</p>
+            <div class="form-group">
+                <label for="email">Email o Telefono</label>
+                <input type="email" id="email" placeholder="ej: tucuenta@gmail.com o 3794123456">
+            </div>
+            <div class="form-group">
+                <label for="password">Contrasena</label>
+                <input type="password" id="password" placeholder="contrasena">
+            </div>
+            <button class="btn">Inicia sesion</button>
+            <div class="footer">
+                <p>No tienes cuenta? <a href="#">Registrate</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

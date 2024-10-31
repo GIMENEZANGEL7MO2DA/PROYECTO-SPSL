@@ -1,0 +1,252 @@
+<html>
+ <head>
+  <title>
+   Mensajes
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f2ef;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .sidebar {
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 20px;
+        }
+        .sidebar h2 {
+            font-size: 20px;
+            margin: 0 0 20px 0;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar h2 i {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .sidebar .message-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar .message-list li {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+            justify-content: space-between;
+        }
+        .sidebar .message-list .message-info {
+            flex-grow: 1;
+            margin-right: 10px;
+        }
+        .sidebar .message-list .message-info h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+        .sidebar .message-list .message-info p {
+            margin: 0;
+            color: #666;
+        }
+        .content {
+            flex-grow: 1;
+            background-color: #fff;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .content .message-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .content .message-header h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .content .message-header input {
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .content .message-body {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 10px;
+        }
+        .content .message-body .message-text {
+            padding: 10px;
+            flex-grow: 1;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            position: relative;
+            width: 100%;
+            max-width: 45%;
+            cursor: pointer;
+        }
+        .content .message-body .message-text.left {
+            align-self: flex-start;
+        }
+        .content .message-body .message-text.right {
+            align-self: flex-end;
+        }
+        .content .message-body .message-text p {
+            margin: 0;
+        }
+        .content .message-body .message-text .date {
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+            font-size: 12px;
+            color: #666;
+        }
+        .content .message-body .message-text a {
+            color: #0073b1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .image-placeholder {
+            width: 50px;
+            height: 50px;
+            background-color: #ddd;
+            border-radius: 50%;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .message-input {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+        .message-input textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: none;
+            margin-right: 10px;
+        }
+        .message-input button {
+            padding: 10px 20px;
+            background-color: #0073b1;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+            .sidebar {
+                width: 300px;
+                border-bottom: none;
+                border-right: 1px solid #ddd;
+            }
+            .content {
+                padding: 20px;
+            }
+            .content .message-body .message-text {
+                width: 45%;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="sidebar">
+    <h2>
+     Mensajes
+     <i class="fas fa-home"></i>
+    </h2>
+    <ul class="message-list">
+     <li>
+      <div class="image-placeholder">
+      </div>
+      <div class="message-info">
+       <h3>
+        Paula Olivera
+       </h3>
+       <p>
+        Patrocinado Conocé nuestros productos de inversión
+       </p>
+      </div>
+      <span>
+       30 sept
+      </span>
+     </li>
+     <li class="active">
+      <div class="image-placeholder">
+      </div>
+      <div class="message-info">
+       <h3>
+        Franklin Tavarez
+       </h3>
+       <p>
+        Oferta de LinkedIn ¡Hola, ANGEL! Me llamo Franklin y...
+       </p>
+      </div>
+      <span>
+       12 sept
+      </span>
+     </li>
+    </ul>
+   </div>
+   <div class="content">
+    <div class="message-header">
+     <input placeholder="Nombre" type="text"/>
+    </div>
+    <div class="message-body">
+     <div class="message-text left">
+      <p>
+       Mensaje de ejemplo
+      </p>
+      <div class="date">
+       12 SEPT
+      </div>
+     </div>
+     <div class="message-text right">
+      <p>
+       Mensaje de ejemplo
+      </p>
+      <div class="date">
+       12 SEPT
+      </div>
+     </div>
+     <div class="message-text left">
+      <p>
+       Mensaje de ejemplo
+      </p>
+      <div class="date">
+       12 SEPT
+      </div>
+     </div>
+    </div>
+    <div class="message-input">
+     <textarea placeholder="Escribe un mensaje..."></textarea>
+     <button>
+      Enviar
+     </button>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

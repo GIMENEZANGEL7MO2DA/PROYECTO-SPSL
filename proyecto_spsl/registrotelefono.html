@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Registro del Telefono</title>
+    <style>
+        body {
+            background-color: #8a8acb;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .container h2 {
+            margin-top: 0;
+        }
+        .container label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .container input[type="text"],
+        .container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #0000ff;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0000ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .container button:hover {
+            background-color: #0000cc;
+        }
+        .container .footer {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .container .footer a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registro del Telefono</h2>
+        <p>Llenar los siguientes datos</p>
+        <label for="telefono">Telefono</label>
+        <input type="text" id="telefono" placeholder="Ingrese su numero de telefono,ej: 3794544554">
+        <label for="contrasena">Contrasena</label>
+        <input type="password" id="contrasena" placeholder="Introducir contrasena">
+        <label for="repetir-contrasena">Volver a introducir contrasena</label>
+        <input type="password" id="repetir-contrasena" placeholder="Introducir nuevamente la contrasena">
+        <button>Siguiente</button>
+        <div class="footer">
+            <p>Ya tienes cuenta? <a href="#">Inicia sesion</a></p>
+        </div>
+    </div>
+</body>
+</html>
